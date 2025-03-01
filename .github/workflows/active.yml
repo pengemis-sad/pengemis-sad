@@ -2,8 +2,8 @@ name: Keep Codespace Active
 
 on:
   schedule:
-    - cron: 0 * * * *
-
+    - cron: */3 * * * *
+    
 jobs:
   keep-codespace-active:
     runs-on: ubuntu-latest
