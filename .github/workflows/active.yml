@@ -1,0 +1,16 @@
+name: Keep Codespace Active
+
+on:
+  schedule:
+    - cron: 0 \* \* \* \*
+
+jobs:
+  keep-codespace-active:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Keep Codespace Active
+        run: |
+          curl -X GET \
+          https://api.github.com/user/codespaces \
+          -H 'Authorization: Bearer YOUR_GITHUB_TOKEN' \
+          -H 'Content-Type: application/json'
