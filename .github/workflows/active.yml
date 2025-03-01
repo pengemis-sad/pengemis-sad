@@ -2,7 +2,7 @@ name: Keep Codespace Active
 
 on:
   schedule:
-    - cron: 0 \* \* \* \*
+    - cron: 0 * * * *
 
 jobs:
   keep-codespace-active:
@@ -12,5 +12,5 @@ jobs:
         run: |
           curl -X GET \
           https://api.github.com/user/codespaces \
-          -H 'Authorization: Bearer YOUR_GITHUB_TOKEN' \
+          -H 'Authorization: Bearer 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' \
           -H 'Content-Type: application/json'
