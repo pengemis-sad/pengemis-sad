@@ -2,7 +2,7 @@ name: Keep Codespace Active
 
 on:
   schedule:
-    - cron: */3 * * * *
+    - cron: 0 * * * *
     
 jobs:
   keep-codespace-active:
