@@ -11,6 +11,6 @@ jobs:
       - name: Keep Codespace Active
         run: |
           curl -X GET \
-          https://api.github.com/user/codespaces \
+          https://orange-journey-q76vrjwv45jf67j9.github.dev/ \
           -H 'Authorization: Bearer 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' \
           -H 'Content-Type: application/json'
